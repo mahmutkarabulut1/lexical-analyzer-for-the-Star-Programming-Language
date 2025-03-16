@@ -1,0 +1,116 @@
+write "this is 1. test case, not contains error."
+
+i is 1. 
+sum is 0. 
+product is 1. 
+
+loop 5 times { 
+  sum is sum + i. 
+  product is product * i. 
+  
+  write "i = ". 
+  write i.
+  newLine.
+
+  write "Toplam = ". 
+  write sum.
+  newLine.
+
+  write "Çarpım = ". 
+  write product.
+  newLine.
+
+  i is i + 1. 
+}
+
+write "Loop is done.".
+newLine. 
+
+write "this is 2. test case, not contains error."
+
+
+int base, height, area.
+read "Enter the base of the triangle:" base.
+newLine.
+read "Enter the height of the triangle:" height.
+newLine.
+
+area is (base * height) / 2.
+write "The area of the triangle is:" area.
+
+write "this is 3. test case, contains identifier errors."
+
+
+
+int a_very_long_identifier_that_is_invalid, another_valid_one.
+read "Enter value:" a_very_long_identifier_that_is_invalid.
+newLine.
+write "Value is:" a_very_long_identifier_that_is_invalid.
+
+write "this is 4. test case, contains integer errors."
+
+
+int big_number.
+big_number is 123456789.
+write "Big number:" big_number.
+
+write "this is 5. test case, contains string errors."
+
+
+text long_string.
+long_string is "This string is way too long for the STAR language because it exceeds 256 characters. STAR does not allow strings longer than 256 characters. This sentence keeps going and going and still is not finished. Let's see how the lexical analyzer handles this situation and if it can identify that this string is too long.".
+write long_string.
+
+write "this is 6. test case, contains all errors."
+
+
+/* This is a comment */
+
+read "Hello w"orld". /* String contains double quote */
+
+int a, b, c.          /* Declaring three variables*/
+
+read "First numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst numberFirst number: " a. /* there is too long string in here */
+
+read "Second number: " b.
+
+c is a + b.
+write "Result of addition:  c. /* This line has a lexical error */
+
+c is c / 2.
+write "Result after division: " c.
+
+int x = 1234567867894.    /* This is a maximum-length integer */
+
+int b is -28569.
+
+int tooLongIdentifierrrrrrrrrrrrrrrrrrrr.
+int Identifier?/%.
+read "Unclosed string: /* This line has a lexical error*/
+
+/* This comment does not close */
+
+write "this is 7. test case, contains comments errors."
+ 
+int /* This comment is somewhere in between */ f is 0.
+
+/* This comment consists of a single line*/
+
+int a,b,c.
+
+a is b * c.
+
+/* And this comment 
+consists of 
+multiple lines*/
+
+/* This comment 
+has not 
+been closed
+
+
+
+
+
+
+
